@@ -41,7 +41,7 @@ a{
 }
 
 .banner-topo{
-  background-image: url(/assets/images/bg4.jpg);
+  background-image: url(../images/bg4.jpg);
   background-size:cover;
   background-position:center;
   overflow:hidden;
@@ -428,7 +428,8 @@ font: bold;
   align-items: center;
   margin-top: 10px;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 50px;
+  padding: 30px;
   
   
 }
