@@ -593,6 +593,11 @@ footer{
 
 @media (max-width: 800px){
   .coder {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
   width: 250px;
   }
 }
