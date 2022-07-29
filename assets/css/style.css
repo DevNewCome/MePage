@@ -48,7 +48,7 @@ a{
   padding-top: 140px;
   padding-bottom: 50px;
   background-repeat: no-repeat;
-  height: 120vh;
+  
   
   
 }
@@ -154,8 +154,8 @@ IconContainer {
   display: flex;
   justify-content: left;
   align-items: center;
-  height: 100vh;
-  margin-top: 100px;
+  
+  
 }
 
 .sobre-mim-img{
@@ -598,6 +598,49 @@ footer{
 @media (max-width: 500px){
   .coder {
   width: 250px;
+  }
+}
+
+@media (max-width: 500px){
+  .menu {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+ 
+  }
+}
+
+@media (max-width: 900px){
+  #container-meio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+ 
+  }
+}
+
+@media (max-width: 900px){
+  .content-left {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 900px){
+  .content-skills {
+  min-width: 100%;
+  }
+}
+
+@media (max-width: 900px){
+  .content-right {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 600px){
+  .meuNome-text {
+   color: #ffffff;
   }
 }
 
