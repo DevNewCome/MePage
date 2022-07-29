@@ -569,7 +569,6 @@ footer{
 
 #section-projetos{
   background-color: white;
-  
 }
 
 @media (max-width: 900px){
@@ -642,6 +641,14 @@ footer{
 @media (max-width: 600px){
   .meuNome-text {
    color: #ffffff;
+   
+  }
+}
+
+@media (max-width: 800px){
+  .conteudo-projetos{
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
