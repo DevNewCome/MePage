@@ -8,7 +8,6 @@
 }
 
 body{
-
   
   background-color: #282828;
 }
@@ -37,6 +36,7 @@ a{
   width: 100%;
  position: fixed;
  background-color: rgb(65, 65, 65);
+ border-bottom: 1px solid white;
  
 }
 
@@ -258,9 +258,7 @@ IconContainer {
   gap: 40px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
-
-  
+  margin-bottom: 40px; 
 }
 
 .content-left{
@@ -570,6 +568,9 @@ footer{
 #section-projetos{
   background-color: white;
 }
+
+/*Responsive*/
+
 
 @media (max-width: 900px){
   #container-meio {  
