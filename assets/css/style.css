@@ -9,7 +9,7 @@
 
 body{
   
-  background-color: #282828;
+  background-color: #121212;
 }
 
 html{
@@ -35,23 +35,24 @@ a{
   z-index: 2;
   width: 100%;
  position: fixed;
- background-color: rgb(65, 65, 65);
- border-bottom: 1px solid white;
+ background-color: #121212;
+ border-bottom: 2px solid rgb(37, 37, 37);
  
 }
 
-.banner-topo{
-  background-image: url(../images/bg4.jpg);
-  background-size:cover;
-  background-position:center;
-  overflow:hidden;
-  padding: 200px;
-  background-repeat: no-repeat;
-  
-  
-  
-  
-  
+
+.hacker{
+    background-image: url(../images/21004063.jpg);
+   background-size:cover;
+   background-position:right;
+   overflow:hidden;
+   background-repeat: no-repeat;
+   width: 200px;
+   height: 200px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   border-radius: 50px;
 }
 
 .img-logo{
@@ -74,7 +75,7 @@ a{
   height:80px;
   display:flex;
   align-items:center;
-  background-color: rgb(65, 65, 65);
+  background-color: #121212;
   justify-content: center;
   
 }
@@ -105,7 +106,7 @@ IconContainer {
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
-  backface-visibility: hidden;
+  background: transparent;
 }
 
 
@@ -142,19 +143,24 @@ IconContainer {
 }
 
 
+.menu li:hover{
+  border-bottom: 2px solid #5641e0;
+  transition: 0.2s;
+  
+}
 
 .header-options .menu a:hover{
- background-color: rgb(0, 0, 0);
- color: white;
-  transition: 0.9s;
+
 }
 
 #sobre-mim-area{
   display: flex;
   justify-content: center;
-  margin-top: 200px;
- 
+  align-items: center;
+  min-height: 600px;
+  height: 100vh;
 }
+
 
 
 
@@ -164,6 +170,8 @@ IconContainer {
   opacity: 0.7;
 }
 
+
+
 .meuNome-text{
   font-family: 'Times New Roman', Times, serif;
   font-weight: 700;
@@ -171,27 +179,62 @@ IconContainer {
   padding-left:30px;
   padding: 10px;
   color: #ccc;
+  
+  
 }
 
 .Mini-texto{
-  font-size: 22px;
+  font-size: 33px;
+}
+
+.nome-efeito {
+  color: #5641e0;
+  animation: animate 4s steps(40) infinite;
+}
+
+.link{
+  animation: link 0.6s infinite alternate;
+}
+
+@keyframes link{
+  0% {
+    opacity: 1;
+}
+40% {
+    opacity: 1;
+}
+60% {
+    opacity: 0;
+}
+100% {
+    opacity: 0;
+}
+}
+
+@keyframes animate{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
 }
 
 .botoes{
   display: flex;
   gap: 40px;
-  margin-top: 20px;
+  margin-top: 80px;
   
 }
 
 .div-button-linkedin{
-  background-color: #ccc;
+  background-color: transparent;
   border-radius: 50px;
   padding: 1px;
 }
 
 .div-button-git{
-  background-color: #ccc;
+  background-color: transparent;
   border-radius: 50px;
   width: 220px;
 }
@@ -201,9 +244,12 @@ IconContainer {
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-size: 45px;
-  padding: 20px;
-  border-radius: 50px;
+  font-size: 35px;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+  border: 2px solid #40a7e9;
+  width: 200px;
   
 }
 
@@ -212,9 +258,13 @@ IconContainer {
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-size: 45px;
-  padding: 20px;
-  border-radius: 50px;
+  font-size: 35px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid #88259f;
+  color: white;
+  width: 200px;
+  
 }
 
 
@@ -222,15 +272,15 @@ IconContainer {
   text-decoration: none;
   text-decoration: none;
   list-style: none;
-  color: #282828;
+  
 }
 
 
 
 .div-button-linkedin:hover, .div-button-git:hover, .button-linkedin:hover, .button-git:hover{
  transition: .3s;
- background-color: rgb(0, 0, 0);
- color: white;
+ background-color: #363636;
+ 
 }
 
 
@@ -255,6 +305,7 @@ IconContainer {
  
   margin-top: 40px;
   display: flex;
+  flex-direction: column;
   gap: 40px;
   justify-content: center;
   align-items: center;
@@ -264,7 +315,7 @@ IconContainer {
 .content-left{
  
  color: rgb(109, 109, 109);
- max-width: 33%;
+ max-width: 80%;
  
  padding: 40px;
  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.7);
@@ -286,12 +337,13 @@ IconContainer {
   margin-bottom:10px;
   font-size: 50px;
   font: bold;
-  color: #5b5858;
+  color: white;
   
  }
 
  #about-me-text{
  font-size: 25px;
+ line-height: 35px;
  }
 
  .content-left p:hover{
@@ -305,7 +357,7 @@ IconContainer {
 
 .content-skills{
   align-items: center;
-  max-width: 33%;
+  min-width: 80%;
   text-align: center;
   justify-content: center;
   padding: 20px;
@@ -314,7 +366,35 @@ IconContainer {
   background: rgba(0, 0, 0, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
+  line-height: 35px;
 }
+
+.content-left button{
+  border:2px solid #40a7e9;
+  border-radius: 10px;
+  background: none;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.content-left button:hover{
+background-color: #737373;
+}
+
+.content-left button a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  }
 
 .content-skills span{
   position: relative;
@@ -346,13 +426,14 @@ font: bold;
 
 .content-right{
   color: rgb(109, 109, 109);
- max-width: 33%;
+  max-width: 80%;
  padding: 40px;
  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.7);
  border-radius: 15px;
  background: rgba(0, 0, 0, 0.1);
  border-top: 1px solid rgba(255, 255, 255, 0.5);
  border-left: 1px solid rgba(255, 255, 255, 0.5);
+ line-height: 35px;
   
 }
 
@@ -543,7 +624,7 @@ footer{
 }
 
 .footer-container{
-  background-color: rgb(149, 149, 149);
+  background-color: #121212;
   width: 100%;
   height: 100px;
   display: flex;
@@ -652,6 +733,26 @@ footer{
     transform: translateX(0);
   }
 }
+
+@media (max-width:950px){
+  .hacker{
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width:900px){
+  .hacker{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: none;
+  }
+}
+
+
 
 
 
